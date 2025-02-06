@@ -1,0 +1,63 @@
+.Api{
+    margin-left: 540px;
+    margin-top: 100px;
+    width: 100%;
+    
+}
+input{
+    width: 300px;
+    height: 18px;
+    padding: 9PX;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+    transition: 1s;
+
+}
+input:hover{
+    background-color: #87BAAB;
+}
+.input1{
+    display: flex;
+    justify-content: space-around;
+    width: 400px ;
+}
+button{
+    background-color: #001011;
+    color: white;
+    padding: 1px;
+    width: 100PX;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 1s;
+    margin-left: 10PX;
+}
+button:hover{
+    /* background-color: #8F2D56; */
+    transform: scale(1.1);
+}
+ol li{
+    font-size: 18px;
+    color: black;
+    transition: 1s all;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 300px;
+    height: 15px;
+    border: 2px solid black;
+    padding: 5px;
+    /* margin-top: 30px; */
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #006D77;
+    text-align: center;
+    /* padding: 20px; */
+    font-size: 25px;
+}
+header h1{
+    padding-top: 10px;
+}
