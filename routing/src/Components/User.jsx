@@ -1,8 +1,10 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { Authcontext } from "../Context/Context";
+import React from "react";
+import './user.css'
 
 
-const GetData = (url) => {
+const getsData = (url) => {
   return fetch(url).then((res) => res.json())
 }
 const getCurrentPageFromUrl = (value) => {
@@ -26,9 +28,10 @@ function User() {
 
   React.useEffect(() => {
     
-    GetData(`https://reqres.in/api/users?page=${page}`).then((res) => setData(res))
+    getsData(`https://reqres.in/api/users?page=${page}`).then((res) => setData(res))
 }, [page]);
 
+console.log(data,"data")
 
 React.useEffect(() => {
     setSearchParams({ page, text })
@@ -41,10 +44,10 @@ React.useEffect(() => {
         <div>
             {
                 data.data?.map((el, i) => (
-                    <div key={i} >
+                    <div key={i} className="use">
                         <img src={el.avatar} />
                         <Link to={`/users/${el.id}`}>
-                            {el.first_name} {" "} {el.last_name}
+                            {el.first_name}  {el.last_name}
                         </Link>
                     </div>
                 ))
