@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 const getData = (url) => {
   return fetch(url).then((res) => res.json())
 }
-export const singlePage = () => {
+export const SinglePage = () => {
 
     const params = useParams();
     const [singleUserData, setSingleUserData] = useState({})
@@ -23,7 +23,9 @@ export const singlePage = () => {
     <div key={singleUserData.id}>
       <img src={singleUserData.avatar} alt="" />
       <p>name : {singleUserData.first_name}</p>{" "} <p>{singleUserData.last_name}</p>
-      <p></p>
+      <p>email : {singleUserData.email}</p>
+      <p>id : {singleUserData.id}</p>
+      <Link to="/users"> Go back</Link>
 
     </div>
     </>
