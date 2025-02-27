@@ -12,7 +12,9 @@ export const Counters = () => {
     <h1>Count:{state.count} </h1>
     <button onClick={() => {dispatch(Decrement)}}> -</button>
     <button onClick={() => {dispatch(Increment)}}>+</button>
-    <button onClick={() => {dispatch(Reset)}}>Reset</button>
+    <button onClick={() => {dispatch(Reset)}}>Reset
+      
+    </button>
    
     </>
   )
