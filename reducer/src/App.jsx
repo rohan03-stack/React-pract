@@ -1,7 +1,7 @@
 
 import './App.css'
 import { Counters } from './components/Counter'
-import { Tudo } from './Tudo/tudo'
+import  { Tudo } from './Tudo/tudo'
 
 function App() {
  
