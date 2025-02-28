@@ -7,6 +7,8 @@ export const Tudo = () => {
   const initialStates = {todos : []};
 
 
+
+  // ...............................Action...................................................
   const AddTodo = {type: "ADDTODO"}
 
   // ...............................Reducer...................................
@@ -18,6 +20,13 @@ export const Tudo = () => {
           ...state,
           todos: [...state.todos, action.payload],
         };
+
+        case "DELETETODO":
+          return{
+            ...state, todos: state.todos.filter((todos, index) => index !== action.payload)
+          }
+
+
       default:
         return state;
     }
@@ -37,6 +46,11 @@ export const Tudo = () => {
     }
   }
 
+  const handleDeleteItem = (index) => {
+    dispatch({ type: 'DELETETODO', payload: index});
+  };
+
+
   return (
     <>
     <div className='center'>
@@ -45,12 +59,27 @@ export const Tudo = () => {
 <button onClick={handletodo}> +</button>
 
 <ul>
-  {state.todos.map((todo, index) =>  (
-    <li key={index}>{todo}</li>
+  {state.todos.map((todos, index) =>  (
+    <li key={index}>
+      {todos} 
+      
+      <button onClick={() => handleDeleteItem(index)}>-</button>
+
+      <button>Edit</button>
+  
+      </li>
+      
+
+    
+  
   ))}
+
 </ul>
 
+
+
 </div>
+
 
     </>
   )
