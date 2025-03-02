@@ -4,7 +4,7 @@ import './tudo.css'
 
 export const Tudo = () => {
 
-  const initialStates = {todos : []};
+  const initialStates = {todos : [],};
 
 
 
@@ -61,11 +61,11 @@ export const Tudo = () => {
 <ul>
   {state.todos.map((todos, index) =>  (
     <li key={index}>
-      {todos} 
+      {todos }   <button>Edit</button>
       
       <button onClick={() => handleDeleteItem(index)}>-</button>
 
-      <button>Edit</button>
+     
   
       </li>
       

@@ -1,0 +1,32 @@
+.Todo-List{
+    width: 400px;
+    height: 100px;
+    margin-left: 500px;
+    margin-top: 100px;
+    /* display: inline; */
+    
+    
+}
+.Todo-List h1{
+    font-size: 40px;
+    text-align: center;
+}
+.Todo-List input{
+    background-color: white;
+    width: 250px;
+    padding: 5px;
+    
+    font-size: 20px;
+    border: 3px solid black;
+}
+.Todo-List button{
+    width: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+.Todo-List button:hover{
+background-image: linear-gradient(blue,rgb(39, 39, 92), rgb(20, 20, 47));
+}

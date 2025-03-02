@@ -1,0 +1,39 @@
+.maps{
+    width: 400px;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 20PX;
+    margin-left: 500px   ;
+    border: 3px solid black;
+    border-radius: 5px ;
+    transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.maps{
+    background-color: white;
+}
+
+        
+.maps button{
+    width: 40px;
+    border: 3px solid black;
+    background-color: white;
+    margin-left: 20px;    
+
+}
+.maps i{
+    font-size: 20px;
+    background-color: white;
+    
+}
+.maps input{
+    background-color: white;
+    font-size: 20px;
+}
+.maps button{
+    background-color: white;
+    width: 50px;
+}
