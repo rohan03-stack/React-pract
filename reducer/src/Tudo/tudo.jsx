@@ -4,12 +4,15 @@ import './tudo.css'
 
 export const Tudo = () => {
 
-  const initialStates = {todos : [],};
+  const initialStates = {todos : [], 
+    editingIndex: null,
+    editext: '',};
 
 
 
   // ...............................Action...................................................
   const AddTodo = {type: "ADDTODO"}
+  const DeleteTodo = {type : "EDITTODO"}
 
   // ...............................Reducer...................................
 
@@ -25,6 +28,12 @@ export const Tudo = () => {
           return{
             ...state, todos: state.todos.filter((todos, index) => index !== action.payload)
           }
+
+          case "EDITTODO":
+            return{
+              ...state,
+              
+            }
 
 
       default:
