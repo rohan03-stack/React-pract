@@ -9,9 +9,7 @@ export const Tudo = () => {
 
 
 
-  // ...............................Action...................................................
-  const AddTodo = { type: "ADDTODO" }
-  const Edittodo = { type: "UPDATETODO" }
+ 
 
   // ...............................Reducer...................................
 
@@ -90,7 +88,7 @@ export const Tudo = () => {
       <div className='center'>
         <h1>todo App</h1>
 
-        <input type="text" name='name' placeholder='Enter the Name'
+        <input value={todo} type="text" name='name' placeholder='Enter the Name'
           onChange={(e) => setTodo(e.target.value)} />
 
         <button onClick={handletodo}>+</button>
@@ -103,7 +101,8 @@ export const Tudo = () => {
 
               {editingId === el.id ? (
                 <>
-                  <input type="text" name='name'
+                  <input
+                   type="text" name='name'
                 onChange={(e) => setTodo(e.target.value)} />
                 
                 <button onClick={() => UpdateTodos(el.id)}>UP</button>

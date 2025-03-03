@@ -1,0 +1,3 @@
+ // ...............................Action...................................................
+  export const AddTodo = { type: "ADDTODO" }
+  export const Edittodo = { type: "UPDATETODO" }
