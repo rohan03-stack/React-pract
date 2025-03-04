@@ -8,7 +8,7 @@ export const Todos = () => {
     const contexsData = useContext(TodoContext);
     const  inputCatch = useRef("");
 
-    const [state, dispatch] = useReducer(Reducer,contexsData.data);
+    const [state, dispatch] = useReducer(Reducer, contexsData.data);
 
     console.log(contexsData, "this is form");
     

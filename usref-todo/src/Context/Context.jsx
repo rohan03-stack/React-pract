@@ -7,7 +7,7 @@ export const TodoContextProvider = ({children}) => {
     const [data, setData] = useState([]);
     
     return(
-        <TodoContext.Provider>
+        <TodoContext.Provider value={{data, setData}}>
             {children}
         </TodoContext.Provider>
     )
