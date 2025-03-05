@@ -1,4 +1,4 @@
-import React, { useContext, useReducer , useRef} from 'react'
+import React, { useContext, useEffect, useReducer , useRef} from 'react'
 import { TodoContext } from '../Context/Context'
 import { Reducer } from './Reducer';
 import { Addtodo } from './Action';
@@ -17,9 +17,12 @@ export const Todos = () => {
         let values = inputCatch.current.value;
         dispatch(Addtodo(values));
         inputCatch.current.value = "";
-        contexsData.setdata(state)
+        
     };
-    console.log("check", state);
+    
+    useEffect (() => {
+      contexsData.setData(state);
+    }, [state]);
     
 
 
