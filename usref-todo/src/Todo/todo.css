@@ -1,0 +1,16 @@
+.inpt{
+ width: 200px;
+ text-transform: capitalize;
+ border: 2px solid white;
+ padding: 5px;
+ 
+}
+
+.inpt1{
+    width: 40px;
+    padding: 5px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    border: 2px solid wheat;
+}

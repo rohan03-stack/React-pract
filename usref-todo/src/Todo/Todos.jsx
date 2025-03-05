@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useReducer , useRef} from 'react'
 import { TodoContext } from '../Context/Context'
 import { Reducer } from './Reducer';
 import { Addtodo } from './Action';
+import { Tudolist } from './Tudolist';
+import './todo.css'
 
 export const Todos = () => {
 
@@ -29,12 +31,14 @@ export const Todos = () => {
   return (
     <>
   <h1>Todo</h1>
-    <input type="text"  placeholder='enter the task' 
+    <input className='inpt' type="text"  placeholder='enter the task' 
      
      ref={inputCatch}
     />
 
-    <input type="text" value="submit" onClick={handleInput} />
+    <input className='inpt1' type="text" value="submit" onClick={handleInput} />
+
+    <Tudolist />
     </>
   )
 }

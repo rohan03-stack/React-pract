@@ -1,0 +1,25 @@
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.list h1 {
+    font-size: 19px;
+
+text-transform: capitalize;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.btn button{
+    font-size: 12px;
+    
+}
