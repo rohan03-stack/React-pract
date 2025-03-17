@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    margin: auto;
+    width: 85%;
+  
+    justify-content: space-between;
+    /* background-color: rgba(4, 4, 54, 0.904); */
+    color: white;
+}
+
+.bg{
+    background-color: rgba(4, 4, 54, 0.904);
+}
+.head{
+    margin-top: 10%;
+    /* width: 30%; */
+}
+.head h1{
+    width: 340px;
+    font-size: 35px;
+}
+.head p{
+    width: 500px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.head button{
+    width: 100px;
+    padding: 5px;
+    margin-top: 18px;
+    background-color: rgb(221, 76, 23);
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.img1 img{
+    width: 400px;
+    height: 410px;
+    margin-top: 10%;
+    border-radius: 10px;
+}
