@@ -60,12 +60,12 @@
 
 .about-us{
     /* margin-left: 30%; */
-    margin-top: 5%;
+    margin-top: 3%;
     width: 400px;
     color: white;
     margin-right: 40px;
 }
 .about-us p{
-    margin-top: 8px;
+    margin-top: 12px;
     font-size: 18px;
 }
