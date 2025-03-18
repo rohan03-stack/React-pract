@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import { Log } from './Log'
+import { Works } from './Works'
 export const About = () => {
   return (
     <>
@@ -27,6 +28,7 @@ export const About = () => {
     </ div>
     
     <Log />
+    <Works/>
     </>
   )
 }
