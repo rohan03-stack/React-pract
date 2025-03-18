@@ -5,19 +5,38 @@
  gap: 20px;
  margin-top: 30px;
  grid-template-columns: auto auto auto;
- background-color: black;
+ /* background-color: black; */
+}
+.bg5{
+    background-color: rgb(1, 1, 34);
 }
 .h{
-    margin-top: 40px;
-    text-align: center;
+    margin-top: 30px;
+    /* text-align: left; */
+    margin-left: 7%;
+    color: white;
 }
 
 .ig img{
-    width: 360px;
-    height: 240px;
-    margin-top: 10px;
+    width: 400px;
+    height: 260px;
+    margin-top: 15px;
 }
 .ig h2{
     color: white;
-    font-size: 17px;
+    font-size: 19px;
+    margin-top: 20px;
 }
+
+.bst{
+    /* align-items: center; */
+    width: 150px;
+    border: 2px solid orangered;
+    padding: 8px;
+    margin-left: 46%;
+    background-color: transparent;
+    margin-top: 3%;
+    color: white;
+    font-size: 16px;
+}
+

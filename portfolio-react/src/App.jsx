@@ -5,6 +5,7 @@ import './App.css'
 import { Navbar } from './Nav/Navbar'
 import { Homes } from './Home/Homes'
 
+
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
 
     <Navbar />
     <Homes />
+   
     </>
   )
 }

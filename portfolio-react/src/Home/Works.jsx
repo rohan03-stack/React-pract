@@ -3,7 +3,7 @@ import './work.css'
 
 export const Works = () => {
   return (
-    <>
+    < div className='bg5'>
    
     <div>
         <h1 className='h'> My Recent Works</h1>
@@ -12,6 +12,7 @@ export const Works = () => {
         <div className='ig'>
             <h2>Ecommerse Landing Page</h2>
             <img src="https://cdn.dribbble.com/userupload/13298890/file/original-e48a63005a3f4e5b753d356628b479b1.jpg?resize=752x&vertical=center" alt="" />
+            
         </div>
         <div className='ig'>
         <h2>BasketBall Studio</h2>
@@ -37,6 +38,8 @@ export const Works = () => {
 
 
     </div>
-    </>
+
+    <button className='bst'>See More</button>
+    </ div>
   )
 }
