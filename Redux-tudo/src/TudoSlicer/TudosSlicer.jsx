@@ -1,4 +1,5 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { act } from "react";
 
 
 const TudosSlice = createSlice({
@@ -18,12 +19,23 @@ const TudosSlice = createSlice({
                 return el.id !== action.payload;
             });
 
+        },
+
+        editTodos: (state, action) => {
+            return state.map((el) =>
+            el.id ===action.payload ? {...el,isEdit: !el.isEdit} :el);
+        },
+
+        updateTodo : (state, action) => {
+            return state.map((el) => 
+                el.id ===action.payload.id ? {...el, text: action.payload.text, isEdit: !el.isEdit} :el
+            )
         }
         
     }
 })
 
-export const {addTodos, deleteTodos} = TudosSlice.actions;
+export const {addTodos, deleteTodos, editTodos, updateTodo} = TudosSlice.actions;
 
 export default TudosSlice.reducer;
 
