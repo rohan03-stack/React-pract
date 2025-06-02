@@ -51,10 +51,12 @@ export const Hero = () => {
 
           </div>
           <a href={adam} download>
-            <button className="inline-flex  text-white border-2 py-2  px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg"></button>
+            <button className="inline-flex  text-white border-2 py-2  px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg"> Download </button>
           </a>
         </section>
-
+        <figure data-aos='fade-up' data-aos-delays='500' className="flex-1 flex justify-center md:justify-end mt-0">
+          <img src={imghero} alt="" className="h-[300px] sm:h-[400px] md:h-[485px] w-[250px] sm:w-[480px] object-cover rounded-lg" />
+        </figure>
       </main>
     </div>
 
