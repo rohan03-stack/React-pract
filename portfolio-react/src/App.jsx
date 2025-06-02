@@ -17,9 +17,9 @@ function App() {
     
 <main className='bg-black '>
  
-
-</main>
 <Hero />
+</main>
+
 
     </>
   )
