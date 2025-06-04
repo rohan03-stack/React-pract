@@ -4,6 +4,7 @@ import Aos from 'aos';
 import { Hero } from './Components/Hero';
 
 import 'aos/dist/aos.css'
+import About from './Components/About';
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
 <main className='bg-black '>
  
 <Hero />
+<About />
 </main>
 
 
