@@ -9,14 +9,20 @@ import node from '../assets/image-portfolio-master/tailwindcss.png'
 import tailwind from '../assets/image-portfolio-master/node.png'
 
 const skillsData = [
-  {id:1,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:2,image:css, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:3,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:4,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:5,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:6,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
-  {id:7,image:html, description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'}
-]
+  {id:1,image:html, title:'Html', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:2,image:css, title:'Css', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:3,image:java, title:'JavaScript', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:4,image:query, title:'JQuery', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:5,image:react, title:'React', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:6,image:node, title:'Node Js', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'},
+  {id:7,image:tailwind,title:'Tailwind', description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, distinctio?'}
+];
+
+const slillsBox=({image,title, description}) => (
+<article className='bg-gray-800 p-4 sm:p-6 rounded-lg  shadow-lg text-center'>
+
+</article>
+)
 export default function Skills() {
   return (
     <div>
