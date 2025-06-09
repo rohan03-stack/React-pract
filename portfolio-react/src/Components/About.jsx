@@ -30,7 +30,7 @@ export default function About() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias exercitationem hic odit ullam? Assumenda illo architecto odio, deleniti perspiciatis nulla officia culpa praesentium autem quas molestiae tempore sed velit iusto eum est voluptatem similique eveniet asperiores enim ipsa? Id, accusamus?
          </p>
 
-         <button className='inline-flex text-white border-2 py-2 px-4 sm:px-6  focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg'>Learn Morex</button>
+         <button className='inline-flex text-white border-2 py-2 px-4 sm:px-6  focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg'>Learn More</button>
         </article>
     </div>
   </section>
