@@ -36,68 +36,73 @@ return(
 )
 }
 
-
-
 export default function Project() {
-  const projects = () => {
   const listProjects = [
     {
-      image:htmlproj,
-      title:'Html CSS Project',
+      image: htmlproj,
+      title: 'Html CSS Project',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
-    },
-
-    {
-      image:reactproj,
-      title:'React Ecommerce Project',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
+      link: ''
     },
     {
-      image:project3,
-      title:'Website Project',
+      image: reactproj,
+      title: 'React Ecommerce Project',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
-    },
-     {
-      image:htmlproj,
-      title:'Html CSS Project',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
-    },
-
-    {
-      image:reactproj,
-      title:'React Ecommerce Project',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
+      link: ''
     },
     {
-      image:project3,
-      title:'Website Project',
+      image: project3,
+      title: 'Website Project',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      link:''
+      link: ''
+    },
+    {
+      image: htmlproj,
+      title: 'Html CSS Project',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+      link: ''
+    },
+    {
+      image: reactproj,
+      title: 'React Ecommerce Project',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+      link: ''
+    },
+    {
+      image: project3,
+      title: 'Website Project',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+      link: ''
     }
-    
-  ]
-}
-  return (
-   <main className='p-4'>
-      <section data-aos= 'fade-up' data-aos-delay='300' >
-        <header className='text-center'>
-      <h1 className='text-3xl text-white sm:text-4xl font-bold mb-6'>
-        My <span className='text-purple-400  '>Projects</span>
-      </h1>
-      <p className='text-gray-400 mt-2 sm:mt-4 text-sm  sm:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iure!</p>
-        </header>
-  </section> 
+  ];
 
-  <section data-aos= 'fade-up' data-aos-delay='300'  className='flex flex-wrap gap-4 justify-center mt-6 '>
-{listProjects.map((project,index) => (
-  <ProjectCard />
-))}
-  </section>
-   </main>
-  )
+  return (
+    <main className='p-4 mt-20'>
+      <section data-aos='fade-up' data-aos-delay='300'>
+        <header className='text-center'>
+          <h1 className='text-3xl text-white sm:text-4xl font-bold mb-6'>
+            My <span className='text-purple-400'>Projects</span>
+          </h1>
+          <p className='text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iure!
+          </p>
+        </header>
+      </section>
+
+      <section data-aos='fade-up' data-aos-delay='300' className='flex flex-wrap gap-12 justify-center mt-6'>
+        {listProjects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+          />
+        ))}
+      </section>
+    </main>
+  );
 }
+
+
+
