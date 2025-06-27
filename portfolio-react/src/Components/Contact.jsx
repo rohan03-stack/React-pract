@@ -9,8 +9,21 @@ export default function Contact() {
            <article className='shadow-lg rounded-lg flex flex-col md:flex-row  max-w-4xl w-full relative'>
             <aside className='w-full md:w-1/2 relative'>
                <div className='absolute z-0 top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[#400px] h-[300px] sm:h-[400px] rounded-full bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] shadow-[0_0_70px_rgba(182,0,182,0.7)]'></div>
-               <img src={imghero} alt="" className='h-[250px] sm:h-[400px] md:h-[485px] w-[300px] sm:w-[480px] object-cover *:' />
+               <img src={imghero} alt="" className='h-[250px] sm:h-[400px] md:h-[485px] w-[300px] sm:w-[480px] object-cover rounded-t-lg md:rounded-r-lg relative' />
                </aside>
+                {/* .contact form */}
+               <section className='p-8 w-full md:w-1/2 '> 
+                <header className='mb-6'>
+                 <h2 className='text-4xl font-bold text-center text-white '>Contact Us</h2>
+                </header>
+
+                <form className='space-y-4'>
+                      <div>
+                        <label htmlFor="name" className='block text-gray-300 font-medium mb-2'>Name</label>
+                        <input type="text" name='name' id='name' placeholder='your name' className='w-full px-4 py-2 text-white bg-gray-400 rounded-lg ' />
+                      </div>
+                </form>
+               </section>
            </article>
    </section>
   )
