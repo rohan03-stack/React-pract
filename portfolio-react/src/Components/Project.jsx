@@ -27,7 +27,7 @@ return(
 
     <div className='px-6 py-4'>
 <header>
-  <h3 className='text-white font-bold text-xl nb-2'>{title}</h3>
+  <h3 className='text-white font-bold text-xl mb-2'>{title}</h3>
 </header>
 <p className='text-gray-200 text-base '>{description}</p>
     </div>
